@@ -1,11 +1,19 @@
 {
     "manifest_version": 2,
 
+    "browser_specific_settings": {
+  	    "gecko": {
+  		    "id": "viewport@trollian"
+  		}
+  	},
+
     "name": "Homestuck POV Cam",
     "version": "3.23",
     "description": "View Homestuck from the point of view of any character",
-    "options_page": "options/options.html",
-
+    "options_ui": {
+      "page":"options/options.html",
+      "browser_style": true
+    },
     "permissions": [
         "storage"
     ],
@@ -18,11 +26,14 @@
         "flash-controls/flash-controls.js"
     ],
 
-    "icons": {
+    "browser_action": {
+      "default_icon": {
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
-    },
+      },
+		"default_popup": "options/options.html"
+  },
 
     "content_scripts": [
         {
