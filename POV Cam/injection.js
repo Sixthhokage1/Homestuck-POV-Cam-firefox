@@ -83,7 +83,7 @@ function modifyPage() {
         optionsLink.style["font-weight"] = "bold";
         optionsLink.style["font-size"] = "10px";
         optionsLink.style.display = "block";
-
+        optionsLink.target = "_blank";
         SOLinkContainer.parentElement.insertBefore(optionsLink, SOLinkContainer);
     }
 }
