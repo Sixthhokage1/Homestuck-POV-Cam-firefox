@@ -32,7 +32,7 @@
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
       },
-		"default_popup": "options/options.html"
+		"default_popup": "options/popup.html"
   },
 
     "content_scripts": [
